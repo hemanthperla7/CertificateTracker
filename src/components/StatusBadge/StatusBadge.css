@@ -1,0 +1,53 @@
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.badge-active {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+.badge-active .badge-dot {
+    background: #22C55E;
+}
+
+.badge-expiring {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.badge-expiring .badge-dot {
+    background: #F59E0B;
+}
+
+.badge-expired {
+    background: #FEE2E2;
+    color: #B91C1C;
+}
+
+.badge-expired .badge-dot {
+    background: #EF4444;
+}
+
+.badge-renewal {
+    background: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.badge-renewal .badge-dot {
+    background: #38BDF8;
+}

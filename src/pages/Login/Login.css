@@ -1,0 +1,267 @@
+.login-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Panel */
+.login-left {
+    flex: 0 0 45%;
+    background: linear-gradient(135deg, #dde3ff 0%, #c8ccf7 40%, #b8c8f0 100%);
+    padding: 48px 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon-lg {
+    width: 44px;
+    height: 44px;
+    background: var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.login-brand-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.login-hero h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.login-hero-accent {
+    color: var(--primary);
+}
+
+.login-hero-sub {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 360px;
+}
+
+.login-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.feature-icon {
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+}
+
+.feature-desc {
+    font-size: 12px;
+    color: var(--text-medium);
+}
+
+/* Right Panel */
+.login-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 40px 32px;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-form-header {
+    margin-bottom: 28px;
+}
+
+.login-form-header h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.login-form-header p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.login-form-header p strong {
+    color: var(--primary);
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.input-wrapper .form-control {
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.pass-toggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.login-error {
+    color: var(--danger);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 14px;
+    background: #FEE2E2;
+    border-radius: var(--radius-sm);
+    margin-bottom: 4px;
+}
+
+.login-submit {
+    width: 100%;
+    justify-content: center;
+    padding: 13px;
+    font-size: 15px;
+    border-radius: var(--radius-sm);
+}
+
+/* Demo Accounts */
+.demo-section {
+    margin-top: 28px;
+}
+
+.demo-label {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.demo-label::before,
+.demo-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: var(--border);
+}
+
+.demo-label::before {
+    left: 0;
+}
+
+.demo-label::after {
+    right: 0;
+}
+
+.demo-account {
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: all 0.15s;
+    background: #FAFAFA;
+}
+
+.demo-account:hover {
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
+
+.demo-tag-row {
+    margin-bottom: 6px;
+}
+
+.demo-type {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.demo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demo-email {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.demo-pass {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+.role-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+}
+
+.role-tag.admin {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+}
+
+.role-tag.user {
+    background: #DCFCE7;
+    color: #15803D;
+    border: 1.5px solid #22C55E;
+}

@@ -1,0 +1,30 @@
+.cert-form-card {
+    max-width: 760px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-success {
+    background: #DCFCE7;
+    color: #15803D;
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}

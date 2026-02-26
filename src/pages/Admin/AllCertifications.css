@@ -1,0 +1,26 @@
+.filter-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+}
+
+.filter-select {
+    width: 180px;
+}
+
+.avatar-sm {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+}
+
+.empty-row {
+    text-align: center;
+    color: var(--text-light);
+    padding: 40px !important;
+    font-size: 14px;
+}
